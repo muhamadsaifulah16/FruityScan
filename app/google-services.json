@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "289944044520",
+    "firebase_url": "https://qc-conveyer-system-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "qc-conveyer-system",
+    "storage_bucket": "qc-conveyer-system.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:289944044520:android:f7406229a850b77ee11a5d",
+        "android_client_info": {
+          "package_name": "com.fruit.scan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDI8heNMZ41o2aUggKgmarHl5hthnYRMBE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
