@@ -1,5 +1,7 @@
 # FruityScan App
 
+FruityScan is an Android application designed to integrate with an automated tomato sorting conveyor system. This app displays scanning data, weight readings, and sorting status in real-time.
+
 ## 📌 Important Prerequisites
 
 This project utilizes **Firebase** as its backend. For security reasons, the Firebase configuration file (`google-services.json`) is **not included** in this Git repository.
@@ -14,55 +16,15 @@ Before building or running this project in Android Studio, you **MUST** complete
 ### 2. Add the Firebase Configuration File
 1. After registering the app in Firebase, download the **`google-services.json`** file.
 2. Open your project folder on your PC and place the file inside the **`app/`** directory.
-```text
-   FruityScan/
-   ├── app/
-   │   ├── google-services.json  <-- PLACE IT HERE
-   │   ├── build.gradle
-   │   └── src/
-3. Verify Firebase Dependencies
-Ensure the Firebase dependencies are properly added in your Gradle files (the project should already have these, just make sure they sync correctly upon opening):
 
-Project-level build.gradle:
+### 3. Verify Firebase Dependencies
+Ensure the Firebase dependencies are properly added in your Gradle files.
+* Add Google Services plugin in your Project-level and App-level `build.gradle`.
+* Add the required Firebase dependencies (e.g., Realtime Database / Auth).
 
-Groovy
-  plugins {
-      // Google services plugin
-      id 'com.google.gms.google-services' version '4.4.1' apply false
-  }
-App-level build.gradle:
-
-Groovy
-  plugins {
-      id 'com.android.application'
-      id 'com.google.gms.google-services' // Google Services plugin
-  }
-
-  dependencies {
-      // Import the Firebase BoM
-      implementation platform('com.google.firebase:firebase-bom:33.1.0')
-      
-      // Add specific Firebase dependencies used (e.g., Realtime Database / Auth)
-      implementation 'com.google.firebase:firebase-database'
-      implementation 'com.google.firebase:firebase-auth'
-  }
-🚀 Getting Started
-Clone this repository.
-
-Add the google-services.json file as instructed above.
-
-Open Android Studio and select Open an Existing Project.
-
-Click Sync Project with Gradle Files and wait for the process to finish.
-
-Run the app on an emulator or a physical Android device.
-
-### 2. Add the Firebase Configuration File
-1. After registering the app in Firebase, download the **`google-services.json`** file.
-2. Open your project folder on your PC and place the file inside the **`app/`** directory.
-```text
-   FruityScan/
-   ├── app/
-   │   ├── google-services.json  <-- PLACE IT HERE
-   │   ├── build.gradle
-   │   └── src/
+## 🚀 Getting Started
+1. Clone this repository.
+2. Add the `google-services.json` file as instructed above.
+3. Open Android Studio and select **Open an Existing Project**.
+4. Click **Sync Project with Gradle Files** and wait for the process to finish.
+5. Run the app on an emulator or a physical Android device.
